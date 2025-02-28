@@ -1,0 +1,221 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    width: 100vw;
+    height: fit-content;
+}
+
+/* Header styling */
+header {
+    background: #FFD700;
+    text-align: left;
+    padding: 20px;
+
+}
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Flex containers for courses, events, alumni, and blog */
+.course-container, .event-container, .blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.sport {
+    height: 50%;
+    width: 60%;
+}
+.eventname {
+    font-size: 50px;
+
+}
+/* Styling for individual course, event, alumnus, and blog-post elements */
+.course,.event,.alumnus, .blog-post {
+    background: #eee;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+    /* Alumni Section */
+.alumni-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the alumni items */
+    justify-content: space-between; /* Distributes space between the items */
+    padding: 20px;
+}
+
+/* Alumni Item Style */
+.alumnus {
+    background-color: #FFEB3B; /* Or */
+    background-color: rgb(255, 235, 59);
+    padding: 15px;
+    width: 22%; /* Adjust width for 4 alumni in a row */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional shadow for depth */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Circular Image Style */
+.alumnus img {
+    width: 120px;  /* Set a fixed width for images */
+    height: 120px; /* Ensure the images are square */
+    border-radius: 50%;  /* Make images circular */
+    margin-bottom: 10px;  /* Space between image and text */
+}
+
+/* Title and Description */
+.alumnus h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.alumnus p {
+    font-size: 14px;
+    color: #252525;
+    line-height: 1.4;  /* Adjust line height for better readability */
+}
+
+/* Ensure responsive design */
+@media (max-width: 768px) {
+    .alumnus {
+        width: 48%;  /* Make each item take 48% width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .alumnus {
+        width: 100%;  /* Stack alumni items in a single column on very small screens */
+    }
+}
+
+
+.about {
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    gap: 20px; /* Space between image and text */
+    background-color: #202020; /* Light background */
+    padding: 90px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.about-img {
+    width: 120px; /* Set the image width */
+    height: auto;
+}
+
+.about-text h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+.about {
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    gap: 90px; /* Space between image and text */
+    background-color: #f1f1f1; /* Light background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.about-img {
+    width: 120px; /* Set the image width */
+    height: auto;
+}
+
+.about-text h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #636262;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #dfdfdf; /* Grey background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;  /* Space out the sections */
+    flex-wrap: wrap;  /* Ensure items wrap on smaller screens */
+    gap: 30px; /* Gap between the sections */
+}
+
+.footer-section {
+    flex: 1;  /* Make each section take equal width */
+    min-width: 200px;  /* Set a minimum width for each section */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    color: #757474;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #0073e6;  /* Link color */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
